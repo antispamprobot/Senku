@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hello` [🙋🏻‍](https://telegra.ph/file/cbad2a4725b43314dc340.jpg) `My name is` *Senku*
+`Hello` [🙋🏻‍](https://telegra.ph/file/67c0ebd373de0a102b16f.jpg) `My name is` *Chika Fujiwara*
 `I'm here to help you manage your groups`. 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add SENKU TO YOUR GROUP ➕️", url="t.me/Senkubest_bot?startgroup=true"),
+            text="➕️ Add Chika TO YOUR GROUP ➕️", url="t.me/Chika_FujiwaraRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="🔰ABOUT", callback_data="kurumi_"),
@@ -89,20 +89,20 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="🚨Support", url="https://t.me/myawesomebot21"),
+            text="🚨Support", url="https://t.me/chikasupport"),
     ], 
 ]
 
 
 HELP_STRINGS = """
-`Hi.. I'm` [🙋🏻](https://telegra.ph/file/cbad2a4725b43314dc340.jpg)
+`Hi.. I'm` Chika [🙋🏻](https://telegra.ph/file/67c0ebd373de0a102b16f.jpg)
 `Click on the buttons below to know about specific modules..`"""
 
 
-KURUMI_IMG = "https://telegra.ph/file/78a95df585a55187568ee.jpg"
+KURUMI_IMG = "https://telegra.ph/file/67c0ebd373de0a102b16f.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Paypal](https://www.paypal.me/zameeljaz)"""
+Click here to donate to [Blue](https://t.me/Millionaire_Detective)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -377,7 +377,7 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Senku*
+            text=""" Hi..🤗 I'm *Chika*
                  \nHere is the [Source Code](https://github.com/asadali32117/Senku) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -625,7 +625,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 769830161 and DONATION_LINK:
+        if OWNER_ID != 1756357544 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
